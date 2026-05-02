@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cours de Musique — SNITRADZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-icon">♪</span><span class="logo-text">SNITRADZ</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="catalogue.html" class="nav-link">Catalogue</a>
+        <a href="guitares.html" class="nav-link">Guitares</a>
+        <a href="pianos.html" class="nav-link">Pianos</a>
+        <a href="batterie.html" class="nav-link">Batterie</a>
+        <a href="vents.html" class="nav-link">Vents</a>
+        <a href="cordes.html" class="nav-link">Cordes</a>
+        <a href="accessoires.html" class="nav-link">Accessoires</a>
+        <a href="occasions.html" class="nav-link">Occasions</a>
+        <a href="cours.html" class="nav-link active">Cours</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="panier.html" class="nav-link panier-link">🛒 <span id="cart-count">0</span></a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div style="font-size:4rem;margin-bottom:1rem">🎓</div>
+    <h1>Cours de Musique</h1>
+    <p>Apprenez à jouer avec nos professeurs expérimentés</p>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> › Cours</div>
+  </div>
+
+  <!-- Avantages -->
+  <section style="background:white;padding:4rem 2rem">
+    <div class="container">
+      <div style="display:grid;grid-template-columns:repeat(auto-fill,minmax(220px,1fr));gap:2rem;text-align:center">
+        <div>
+          <div style="font-size:3rem;margin-bottom:1rem">👨‍🏫</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:.5rem">Professeurs certifiés</h3>
+          <p style="color:var(--text-light);font-size:.9rem">Plus de 15 enseignants diplômés du conservatoire</p>
+        </div>
+        <div>
+          <div style="font-size:3rem;margin-bottom:1rem">📅</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:.5rem">Horaires flexibles</h3>
+          <p style="color:var(--text-light);font-size:.9rem">Cours en semaine et le week-end, adaptés à votre planning</p>
+        </div>
+        <div>
+          <div style="font-size:3rem;margin-bottom:1rem">🧒</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:.5rem">Tous âges</h3>
+          <p style="color:var(--text-light);font-size:.9rem">Enfants dès 5 ans, adultes et seniors bienvenus</p>
+        </div>
+        <div>
+          <div style="font-size:3rem;margin-bottom:1rem">💻</div>
+          <h3 style="font-family:'Playfair Display',serif;font-size:1.1rem;margin-bottom:.5rem">Cours en ligne</h3>
+          <p style="color:var(--text-light);font-size:.9rem">Sessions visio disponibles pour toute la France</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Cours disponibles -->
+  <section class="section">
+    <div class="container">
+      <h2 class="section-title">Nos Cours</h2>
+      <div class="cours-grid">
+
+        <div class="cours-card">
+          <div class="cours-header" style="background:linear-gradient(135deg,#c0392b22,#faf6ee)">🎸</div>
+          <div class="cours-body">
+            <h3>Guitare</h3>
+            <p>Acoustique ou électrique, de débutant à avancé. Apprenez vos premiers accords ou perfectionnez votre technique de solo.</p>
+            <div class="cours-meta">
+              <span>⏱ 45 min / séance</span>
+              <span>👶 Dès 7 ans</span>
+              <span>📍 Présentiel & Visio</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem">
+              <div>
+                <div style="font-size:1.4rem;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold)">35€ / cours</div>
+                <div style="font-size:.8rem;color:var(--text-light)">ou 120€ / 4 cours</div>
+              </div>
+              <a href="contact.html" class="btn-dark">S'inscrire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cours-card">
+          <div class="cours-header" style="background:linear-gradient(135deg,#2c3e5022,#faf6ee)">🎹</div>
+          <div class="cours-body">
+            <h3>Piano</h3>
+            <p>Classique, jazz ou variété. Solfège intégré pour les débutants, répertoire au choix pour les confirmés.</p>
+            <div class="cours-meta">
+              <span>⏱ 60 min / séance</span>
+              <span>👶 Dès 5 ans</span>
+              <span>📍 Présentiel & Visio</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem">
+              <div>
+                <div style="font-size:1.4rem;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold)">40€ / cours</div>
+                <div style="font-size:.8rem;color:var(--text-light)">ou 140€ / 4 cours</div>
+              </div>
+              <a href="contact.html" class="btn-dark">S'inscrire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cours-card">
+          <div class="cours-header" style="background:linear-gradient(135deg,#d3540022,#faf6ee)">🥁</div>
+          <div class="cours-body">
+            <h3>Batterie & Percussion</h3>
+            <p>Technique de base, coordination, styles musicaux variés. Cabines insonorisées disponibles.</p>
+            <div class="cours-meta">
+              <span>⏱ 60 min / séance</span>
+              <span>👶 Dès 8 ans</span>
+              <span>📍 Présentiel uniquement</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem">
+              <div>
+                <div style="font-size:1.4rem;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold)">40€ / cours</div>
+                <div style="font-size:.8rem;color:var(--text-light)">ou 140€ / 4 cours</div>
+              </div>
+              <a href="contact.html" class="btn-dark">S'inscrire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cours-card">
+          <div class="cours-header" style="background:linear-gradient(135deg,#27ae6022,#faf6ee)">🎷</div>
+          <div class="cours-body">
+            <h3>Saxophone</h3>
+            <p>Alto, ténor, soprano. Initiation au souffle, technique de langue et répertoire jazz ou classique.</p>
+            <div class="cours-meta">
+              <span>⏱ 45 min / séance</span>
+              <span>👶 Dès 10 ans</span>
+              <span>📍 Présentiel & Visio</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem">
+              <div>
+                <div style="font-size:1.4rem;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold)">35€ / cours</div>
+                <div style="font-size:.8rem;color:var(--text-light)">ou 120€ / 4 cours</div>
+              </div>
+              <a href="contact.html" class="btn-dark">S'inscrire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cours-card">
+          <div class="cours-header" style="background:linear-gradient(135deg,#8e44ad22,#faf6ee)">🎻</div>
+          <div class="cours-body">
+            <h3>Violon</h3>
+            <p>De la première note aux concertos. Méthode Suzuki disponible pour les enfants. Cordes classiques et folk.</p>
+            <div class="cours-meta">
+              <span>⏱ 45 min / séance</span>
+              <span>👶 Dès 5 ans</span>
+              <span>📍 Présentiel & Visio</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem">
+              <div>
+                <div style="font-size:1.4rem;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold)">38€ / cours</div>
+                <div style="font-size:.8rem;color:var(--text-light)">ou 130€ / 4 cours</div>
+              </div>
+              <a href="contact.html" class="btn-dark">S'inscrire</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="cours-card">
+          <div class="cours-header" style="background:linear-gradient(135deg,#c9a84c22,#faf6ee)">🎤</div>
+          <div class="cours-body">
+            <h3>Chant</h3>
+            <p>Technique vocale, placement, répertoire au choix. Pop, classique, lyrique ou comédie musicale.</p>
+            <div class="cours-meta">
+              <span>⏱ 45 min / séance</span>
+              <span>👶 Dès 12 ans</span>
+              <span>📍 Présentiel & Visio</span>
+            </div>
+            <div style="display:flex;align-items:center;justify-content:space-between;margin-top:1rem">
+              <div>
+                <div style="font-size:1.4rem;font-family:'Playfair Display',serif;font-weight:700;color:var(--gold)">35€ / cours</div>
+                <div style="font-size:.8rem;color:var(--text-light)">ou 120€ / 4 cours</div>
+              </div>
+              <a href="contact.html" class="btn-dark">S'inscrire</a>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Solfège -->
+  <section style="background:var(--dark);padding:4rem 2rem;text-align:center">
+    <h2 style="font-family:'Playfair Display',serif;font-size:2rem;color:var(--cream);margin-bottom:1rem">Cours de Solfège</h2>
+    <p style="color:rgba(240,233,216,.7);max-width:600px;margin:0 auto 2rem">Le solfège est la grammaire de la musique. Nous proposons des cours collectifs du samedi pour apprendre à lire et écrire la musique.</p>
+    <div style="display:inline-flex;gap:2rem;background:rgba(255,255,255,.05);padding:1.5rem 3rem;border-radius:12px;border:1px solid rgba(201,168,76,.3);margin-bottom:2rem;flex-wrap:wrap;justify-content:center">
+      <div style="text-align:center"><div style="color:var(--gold);font-size:1.5rem;font-weight:700">15€</div><div style="color:rgba(240,233,216,.6);font-size:.85rem">par séance</div></div>
+      <div style="text-align:center"><div style="color:var(--gold);font-size:1.5rem;font-weight:700">Samedi</div><div style="color:rgba(240,233,216,.6);font-size:.85rem">10h-12h</div></div>
+      <div style="text-align:center"><div style="color:var(--gold);font-size:1.5rem;font-weight:700">Max 8</div><div style="color:rgba(240,233,216,.6);font-size:.85rem">élèves / groupe</div></div>
+    </div><br>
+    <a href="contact.html" class="btn-primary">Réserver une place</a>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><span class="logo-icon">♪</span><span class="logo-text">Harmonia</span></div><p>Votre partenaire musical depuis 2009.</p></div>
+      <div class="footer-links"><h4>Navigation</h4><a href="catalogue.html">Catalogue</a><a href="occasions.html">Occasions</a><a href="cours.html">Cours</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h4>Catégories</h4><a href="guitares.html">Guitares</a><a href="pianos.html">Pianos</a><a href="batterie.html">Batterie</a><a href="vents.html">Vents</a></div>
+      <div class="footer-links"><h4>Infos</h4><a href="livraison.html">Livraison</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Harmonia</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact — SNITRADZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-icon">♪</span><span class="logo-text">SNITRADZ</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="catalogue.html" class="nav-link">Catalogue</a>
+        <a href="guitares.html" class="nav-link">Guitares</a>
+        <a href="pianos.html" class="nav-link">Pianos</a>
+        <a href="batterie.html" class="nav-link">Batterie</a>
+        <a href="vents.html" class="nav-link">Vents</a>
+        <a href="cordes.html" class="nav-link">Cordes</a>
+        <a href="accessoires.html" class="nav-link">Accessoires</a>
+        <a href="occasions.html" class="nav-link">Occasions</a>
+        <a href="cours.html" class="nav-link">Cours</a>
+        <a href="contact.html" class="nav-link active">Contact</a>
+        <a href="panier.html" class="nav-link panier-link">🛒 <span id="cart-count">0</span></a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div style="font-size:4rem;margin-bottom:1rem">📬</div>
+    <h1>Nous Contacter</h1>
+    <p>Notre équipe est là pour vous accompagner</p>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> › Contact</div>
+  </div>
+
+  <div class="contact-grid">
+    <div class="contact-info">
+      <h2>Parlons Musique</h2>
+      <p style="color:var(--text-light);margin-bottom:2rem;line-height:1.8">Que ce soit pour un conseil d'achat, une demande d'inscription aux cours, une réparation ou toute autre question — notre équipe passionnée est à votre écoute.</p>
+
+      <div class="contact-info-item">
+        <div class="icon">📍</div>
+        <div>
+          <strong>Adresse</strong><br>
+          <span style="color:var(--text-light)">12 rue de la Mélodie<br>75001 Paris, France</span>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="icon">📞</div>
+        <div>
+          <strong>Téléphone</strong><br>
+          <span style="color:var(--text-light)">01 23 45 67 89<br>Lun–Sam 9h–19h</span>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="icon">📧</div>
+        <div>
+          <strong>Email</strong><br>
+          <span style="color:var(--text-light)">contact@harmonia-music.fr</span>
+        </div>
+      </div>
+
+      <div class="contact-info-item">
+        <div class="icon">🕐</div>
+        <div>
+          <strong>Horaires</strong><br>
+          <span style="color:var(--text-light)">
+            Lundi–Vendredi : 9h–19h<br>
+            Samedi : 10h–18h<br>
+            Dimanche : Fermé
+          </span>
+        </div>
+      </div>
+
+      <div style="margin-top:2rem;padding:1.5rem;background:var(--cream2);border-radius:12px">
+        <h3 style="font-family:'Playfair Display',serif;margin-bottom:.5rem">Atelier de réparation</h3>
+        <p style="font-size:.9rem;color:var(--text-light)">Nous réparons guitares, pianos, instruments à vent et à cordes. Devis gratuit sur place ou envoi postal.</p>
+      </div>
+    </div>
+
+    <div class="contact-form">
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:1.5rem">Envoyer un message</h3>
+      <div class="form-group">
+        <label>Votre nom *</label>
+        <input type="text" placeholder="Jean Dupont">
+      </div>
+      <div class="form-group">
+        <label>Email *</label>
+        <input type="email" placeholder="jean@exemple.fr">
+      </div>
+      <div class="form-group">
+        <label>Téléphone</label>
+        <input type="tel" placeholder="06 12 34 56 78">
+      </div>
+      <div class="form-group">
+        <label>Sujet *</label>
+        <select>
+          <option>Conseil d'achat</option>
+          <option>Inscription cours de musique</option>
+          <option>Réparation instrument</option>
+          <option>Suivi de commande</option>
+          <option>Demande de reprise</option>
+          <option>Autre</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label>Message *</label>
+        <textarea placeholder="Décrivez votre demande..."></textarea>
+      </div>
+      <button class="btn-primary" style="width:100%;border:none;cursor:pointer;font-size:1rem" onclick="sendContact()">
+        Envoyer le message ✉️
+      </button>
+    </div>
+  </div>
+
+  <!-- Map placeholder -->
+  <div style="background:var(--cream2);padding:4rem 2rem;text-align:center">
+    <div style="max-width:800px;margin:0 auto;background:white;border-radius:16px;padding:3rem;box-shadow:0 8px 40px rgba(0,0,0,.08)">
+      <div style="font-size:5rem;margin-bottom:1rem">🗺️</div>
+      <h3 style="font-family:'Playfair Display',serif;font-size:1.5rem;margin-bottom:.5rem">Nous trouver</h3>
+      <p style="color:var(--text-light)">12 rue de la Mélodie, 75001 Paris</p>
+      <p style="color:var(--text-light);font-size:.9rem;margin-top:.5rem">Métro : Châtelet (lignes 1, 4, 7, 11, 14)</p>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><span class="logo-icon">♪</span><span class="logo-text">Harmonia</span></div><p>Votre partenaire musical depuis 2009.</p></div>
+      <div class="footer-links"><h4>Navigation</h4><a href="catalogue.html">Catalogue</a><a href="occasions.html">Occasions</a><a href="cours.html">Cours</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h4>Catégories</h4><a href="guitares.html">Guitares</a><a href="pianos.html">Pianos</a><a href="batterie.html">Batterie</a><a href="vents.html">Vents</a></div>
+      <div class="footer-links"><h4>Infos</h4><a href="livraison.html">Livraison</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Harmonia</p></div>
+  </footer>
+  <script src="script.js"></script>
+  <script>
+    function sendContact() {
+      showToast('✓ Message envoyé ! Nous vous répondrons sous 24h.');
+    }
+  </script>
+</body>
+</html>

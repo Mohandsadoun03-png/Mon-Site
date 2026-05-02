@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Livraison & Retours — SNITRADZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-icon">♪</span><span class="logo-text">SNITRADZ</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="catalogue.html" class="nav-link">Catalogue</a>
+        <a href="guitares.html" class="nav-link">Guitares</a>
+        <a href="pianos.html" class="nav-link">Pianos</a>
+        <a href="batterie.html" class="nav-link">Batterie</a>
+        <a href="vents.html" class="nav-link">Vents</a>
+        <a href="cordes.html" class="nav-link">Cordes</a>
+        <a href="accessoires.html" class="nav-link">Accessoires</a>
+        <a href="occasions.html" class="nav-link">Occasions</a>
+        <a href="cours.html" class="nav-link">Cours</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="panier.html" class="nav-link panier-link">🛒 <span id="cart-count">0</span></a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <div class="page-banner">
+    <div style="font-size:4rem;margin-bottom:1rem">🚚</div>
+    <h1>Livraison & Retours</h1>
+    <p>Tout savoir sur nos conditions de livraison</p>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> › Livraison & Retours</div>
+  </div>
+
+  <div class="livraison-grid">
+
+    <h2 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:2rem">Modes de Livraison</h2>
+
+    <div class="livraison-card">
+      <div class="icon">📦</div>
+      <div>
+        <h3>Livraison Standard</h3>
+        <p style="color:var(--text-light);line-height:1.7">Délai de 3 à 5 jours ouvrés. <strong style="color:var(--green)">Gratuite</strong> pour toute commande supérieure à 80€. En dessous, forfait de 5,99€. Remise en main propre ou en point relais.</p>
+      </div>
+    </div>
+
+    <div class="livraison-card">
+      <div class="icon">⚡</div>
+      <div>
+        <h3>Livraison Express</h3>
+        <p style="color:var(--text-light);line-height:1.7">Commandez avant 14h, recevez votre colis le lendemain ouvré. Disponible partout en France métropolitaine. Forfait de 12,99€ quel que soit le montant.</p>
+      </div>
+    </div>
+
+    <div class="livraison-card">
+      <div class="icon">🏪</div>
+      <div>
+        <h3>Retrait en Magasin</h3>
+        <p style="color:var(--text-light);line-height:1.7">Commandez en ligne et récupérez votre instrument directement en boutique à Paris. Disponible sous 2h pour les articles en stock. <strong style="color:var(--green)">Gratuit</strong>.</p>
+      </div>
+    </div>
+
+    <div class="livraison-card">
+      <div class="icon">🪗</div>
+      <div>
+        <h3>Livraison Instruments Volumineux</h3>
+        <p style="color:var(--text-light);line-height:1.7">Pour les pianos acoustiques, batteries complètes et grandes harpes, nous proposons une livraison spécialisée avec mise en place. Devis sur demande. Délai : 1 à 2 semaines.</p>
+      </div>
+    </div>
+
+    <h2 style="font-family:'Playfair Display',serif;font-size:2rem;margin:3rem 0 2rem">Politique de Retours</h2>
+
+    <div class="livraison-card" style="border-left:4px solid var(--green)">
+      <div class="icon">✅</div>
+      <div>
+        <h3>30 jours pour changer d'avis</h3>
+        <p style="color:var(--text-light);line-height:1.7">Vous disposez de 30 jours à compter de la réception pour retourner un article non utilisé dans son emballage d'origine. Remboursement intégral sous 5 jours ouvrés.</p>
+      </div>
+    </div>
+
+    <div class="livraison-card" style="border-left:4px solid var(--gold)">
+      <div class="icon">🔧</div>
+      <div>
+        <h3>Garantie & SAV</h3>
+        <p style="color:var(--text-light);line-height:1.7">Tous nos instruments neufs bénéficient d'une garantie fabricant de 2 ans minimum. Notre atelier de réparation prend en charge les interventions sous garantie. Instruments d'occasion : 6 mois.</p>
+      </div>
+    </div>
+
+    <div class="livraison-card" style="border-left:4px solid var(--red)">
+      <div class="icon">❌</div>
+      <div>
+        <h3>Articles non retournables</h3>
+        <p style="color:var(--text-light);line-height:1.7">Les anches, cordes, bâtons de percussions et tout article hygiénique une fois déballé ne peuvent être retournés. Les logiciels et téléchargements numériques sont également exclus.</p>
+      </div>
+    </div>
+
+    <div style="background:var(--cream2);border-radius:12px;padding:2rem;margin-top:1rem;text-align:center">
+      <h3 style="font-family:'Playfair Display',serif;margin-bottom:1rem">Une question sur votre livraison ?</h3>
+      <p style="color:var(--text-light);margin-bottom:1.5rem">Notre service client est disponible du lundi au samedi de 9h à 19h.</p>
+      <a href="contact.html" class="btn-primary">Contacter le SAV</a>
+    </div>
+  </div>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><span class="logo-icon">♪</span><span class="logo-text">Harmonia</span></div><p>Votre partenaire musical depuis 2009.</p></div>
+      <div class="footer-links"><h4>Navigation</h4><a href="catalogue.html">Catalogue</a><a href="occasions.html">Occasions</a><a href="cours.html">Cours</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h4>Catégories</h4><a href="guitares.html">Guitares</a><a href="pianos.html">Pianos</a><a href="batterie.html">Batterie</a><a href="vents.html">Vents</a></div>
+      <div class="footer-links"><h4>Infos</h4><a href="livraison.html">Livraison</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Harmonia</p></div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>

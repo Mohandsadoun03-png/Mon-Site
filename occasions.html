@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Occasions & Soldes — SNITRADZ</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo"><span class="logo-icon">♪</span><span class="logo-text">SNITRADZ</span></a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link">Accueil</a>
+        <a href="catalogue.html" class="nav-link">Catalogue</a>
+        <a href="guitares.html" class="nav-link">Guitares</a>
+        <a href="pianos.html" class="nav-link">Pianos</a>
+        <a href="batterie.html" class="nav-link">Batterie</a>
+        <a href="vents.html" class="nav-link">Vents</a>
+        <a href="cordes.html" class="nav-link">Cordes</a>
+        <a href="accessoires.html" class="nav-link">Accessoires</a>
+        <a href="occasions.html" class="nav-link active">Occasions</a>
+        <a href="cours.html" class="nav-link">Cours</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="panier.html" class="nav-link panier-link">🛒 <span id="cart-count">0</span></a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <div class="page-banner" style="background:linear-gradient(135deg,#1a1208,#c9a84c33)">
+    <div style="font-size:4rem;margin-bottom:1rem">🏷️</div>
+    <h1>Occasions & Soldes</h1>
+    <p>Instruments d'occasion vérifiés et promotions exclusives</p>
+    <div class="breadcrumb"><a href="index.html">Accueil</a> › Occasions</div>
+  </div>
+
+  <!-- Info bande -->
+  <div style="background:var(--gold);padding:1.2rem 2rem;text-align:center">
+    <p style="color:var(--dark);font-weight:600;font-size:1rem">
+      🔍 Tous nos instruments d'occasion sont <strong>vérifiés, testés et garantis 6 mois</strong> par nos techniciens
+    </p>
+  </div>
+
+  <section class="section">
+    <div class="container">
+      <div class="occasions-intro">
+        <h2 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:1rem">Bonnes affaires du moment</h2>
+        <p>Profitez de nos instruments d'occasion sélectionnés avec soin, ou de nos promotions sur le stock neuf. Des économies allant jusqu'à 40% sur les meilleures marques.</p>
+      </div>
+
+      <div class="products-grid" id="occasions-grid"></div>
+    </div>
+  </section>
+
+  <!-- Reprise section -->
+  <section style="background:var(--cream2);padding:4rem 2rem">
+    <div class="container" style="display:grid;grid-template-columns:1fr 1fr;gap:3rem;align-items:center">
+      <div>
+        <h2 style="font-family:'Playfair Display',serif;font-size:2rem;margin-bottom:1rem">Vendez ou échangez votre instrument</h2>
+        <p style="color:var(--text-light);line-height:1.8;margin-bottom:1.5rem">
+          Vous souhaitez upgrader votre instrument ? Nous rachetions votre ancien matériel ou vous proposons une reprise en échange. Contactez-nous pour obtenir une estimation gratuite.
+        </p>
+        <ul style="list-style:none;margin-bottom:2rem">
+          <li style="padding:.5rem 0;display:flex;gap:.8rem;align-items:center"><span style="color:var(--green);font-weight:700">✓</span> Estimation gratuite sous 48h</li>
+          <li style="padding:.5rem 0;display:flex;gap:.8rem;align-items:center"><span style="color:var(--green);font-weight:700">✓</span> Reprise en bon état garantie</li>
+          <li style="padding:.5rem 0;display:flex;gap:.8rem;align-items:center"><span style="color:var(--green);font-weight:700">✓</span> Paiement immédiat ou bon d'achat</li>
+        </ul>
+        <a href="contact.html" class="btn-primary">Demander une estimation</a>
+      </div>
+      <div style="text-align:center;font-size:8rem">🔄</div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><span class="logo-icon">♪</span><span class="logo-text">Harmonia</span></div><p>Votre partenaire musical depuis 2009.</p></div>
+      <div class="footer-links"><h4>Navigation</h4><a href="catalogue.html">Catalogue</a><a href="occasions.html">Occasions</a><a href="cours.html">Cours</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h4>Catégories</h4><a href="guitares.html">Guitares</a><a href="pianos.html">Pianos</a><a href="batterie.html">Batterie</a><a href="vents.html">Vents</a></div>
+      <div class="footer-links"><h4>Infos</h4><a href="livraison.html">Livraison</a><a href="contact.html">Contact</a></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 Harmonia</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>
+    // Only show promo products
+    document.addEventListener('DOMContentLoaded', () => {
+      const el = document.getElementById('occasions-grid');
+      const promos = PRODUCTS.filter(p => p.oldPrice || p.badge === 'promo');
+      el.innerHTML = promos.map(p => renderProductCard(p)).join('');
+    });
+  </script>
+</body>
+</html>

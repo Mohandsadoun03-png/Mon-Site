@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SNITRADZ — Instruments de Musique</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;0,900;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+  <header class="header" id="header">
+    <div class="header-inner">
+      <a href="index.html" class="logo">
+        <span class="logo-icon">♪</span>
+        <span class="logo-text">SNITRADZ</span>
+      </a>
+      <nav class="nav">
+        <a href="index.html" class="nav-link active">Accueil</a>
+        <a href="catalogue.html" class="nav-link">Catalogue</a>
+        <a href="guitares.html" class="nav-link">Guitares</a>
+        <a href="pianos.html" class="nav-link">Pianos</a>
+        <a href="batterie.html" class="nav-link">Batterie</a>
+        <a href="vents.html" class="nav-link">Vents</a>
+        <a href="cordes.html" class="nav-link">Cordes</a>
+        <a href="accessoires.html" class="nav-link">Accessoires</a>
+        <a href="occasions.html" class="nav-link">Occasions</a>
+        <a href="cours.html" class="nav-link">Cours</a>
+        <a href="contact.html" class="nav-link">Contact</a>
+        <a href="panier.html" class="nav-link panier-link">🛒 <span id="cart-count">0</span></a>
+      </nav>
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+    </div>
+  </header>
+
+  <section class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-content">
+      <p class="hero-pre">Bienvenue chez SNITRADZ by Mohand</p>
+      <h1 class="hero-title">La Musique,<br><em>Votre Passion</em></h1>
+      <p class="hero-sub">Découvrez notre sélection d'instruments de qualité — guitares, pianos, batterie et bien plus encore.</p>
+      <div class="hero-cta">
+        <a href="catalogue.html" class="btn-primary">Explorer le catalogue</a>
+        <a href="cours.html" class="btn-secondary">Nos cours de musique</a>
+      </div>
+    </div>
+    <div class="hero-visual">
+      <div class="vinyl-disc">
+        <div class="vinyl-inner">♪</div>
+      </div>
+    </div>
+  </section>
+
+  <section class="stats">
+    <div class="stat"><span class="stat-num">2 500+</span><span class="stat-label">Instruments</span></div>
+    <div class="stat"><span class="stat-num">15 ans</span><span class="stat-label">D'expérience</span></div>
+    <div class="stat"><span class="stat-num">98%</span><span class="stat-label">Clients satisfaits</span></div>
+    <div class="stat"><span class="stat-num">Livraison</span><span class="stat-label">Offerte dès 80€</span></div>
+  </section>
+
+  <section class="categories section">
+    <div class="container">
+      <h2 class="section-title">Nos Catégories</h2>
+      <div class="cat-grid">
+        <a href="guitares.html" class="cat-card" style="--c:#c0392b"><div class="cat-icon">🎸</div><h3>Guitares</h3><p>Acoustiques, électriques, classiques</p></a>
+        <a href="pianos.html" class="cat-card" style="--c:#2c3e50"><div class="cat-icon">🎹</div><h3>Pianos & Claviers</h3><p>Numériques, acoustiques, synthés</p></a>
+        <a href="batterie.html" class="cat-card" style="--c:#d35400"><div class="cat-icon">🥁</div><h3>Batterie</h3><p>Acoustique, électronique, cajón</p></a>
+        <a href="vents.html" class="cat-card" style="--c:#27ae60"><div class="cat-icon">🎺</div><h3>Vents</h3><p>Saxophone, trompette, flûte</p></a>
+        <a href="cordes.html" class="cat-card" style="--c:#8e44ad"><div class="cat-icon">🎻</div><h3>Cordes</h3><p>Violon, violoncelle, contrebasse</p></a>
+        <a href="accessoires.html" class="cat-card" style="--c:#16a085"><div class="cat-icon">🎵</div><h3>Accessoires</h3><p>Amplis, câbles, étuis, méthodes</p></a>
+      </div>
+    </div>
+  </section>
+
+  <section class="featured section">
+    <div class="container">
+      <h2 class="section-title">Coups de Cœur</h2>
+      <div class="products-grid" id="featured-products"></div>
+    </div>
+  </section>
+
+  <section class="promo-banner">
+    <div class="promo-content">
+      <h2>Soldes d'Été — Jusqu'à <span>-40%</span></h2>
+      <p>Sur une sélection d'instruments acoustiques et électriques</p>
+      <a href="occasions.html" class="btn-primary">Voir les offres</a>
+    </div>
+  </section>
+
+  <section class="temoignages section">
+    <div class="container">
+      <h2 class="section-title">Ce que disent nos clients</h2>
+      <div class="temo-grid">
+        <div class="temo-card"><div class="stars">★★★★★</div><p>"Une boutique extraordinaire ! J'ai trouvé ma guitare acoustique idéale."</p><strong>— Marie L.</strong></div>
+        <div class="temo-card"><div class="stars">★★★★★</div><p>"Livraison rapide, instrument bien emballé. Le piano numérique est parfait."</p><strong>— Thomas B.</strong></div>
+        <div class="temo-card"><div class="stars">★★★★☆</div><p>"Très bon rapport qualité-prix. Les cours de musique sont un vrai plus !"</p><strong>— Camille D.</strong></div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-grid">
+      <div class="footer-brand"><div class="logo"><span class="logo-icon">♪</span><span class="logo-text">SNITRADZ</span></div><p>Votre partenaire musical depuis 2009.</p></div>
+      <div class="footer-links"><h4>Navigation</h4><a href="catalogue.html">Catalogue</a><a href="occasions.html">Occasions</a><a href="cours.html">Cours de musique</a><a href="contact.html">Contact</a></div>
+      <div class="footer-links"><h4>Catégories</h4><a href="guitares.html">Guitares</a><a href="pianos.html">Pianos</a><a href="batterie.html">Batterie</a><a href="vents.html">Vents</a></div>
+      <div class="footer-links"><h4>Informations</h4><a href="livraison.html">Livraison & Retours</a><a href="contact.html">Nous contacter</a><p style="margin-top:1rem;font-size:.85rem;">📍 12 rue de la Mélodie, Paris 75001<br>📞 0556461613 </p></div>
+    </div>
+    <div class="footer-bottom"><p>© 2024 SNITRADZ by Mohand Sadoun — Tous droits réservés</p></div>
+  </footer>
+
+  <script src="script.js"></script>
+  <script>renderFeaturedProducts('featured-products', [0,1,2,3,4,5]);</script>
+</body>
+</html>
